@@ -1,0 +1,5 @@
+curl -Method Post -Uri http://localhost:8080/login -Header @{"Content-Type"="application/json"} -Body '{"username":"admin", "password":"123456"}'
+# 注意：Headers 参数后面必须是 @{...} 格式
+curl -Method Post -Uri http://localhost:8080/process/start -Headers @{"Authorization"="Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2ODU0OTI3MiwiZXhwIjoxNzY4NTUyODcyfQ.xJ9RwECVNEdMcO2P90R3h9tHYXsXmyVaSLacGbkAvf4"; "Content-Type"="application/json"}
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2ODU0OTI3MiwiZXhwIjoxNzY4NTUyODcyfQ.xJ9RwECVNEdMcO2P90R3h9tHYXsXmyVaSLacGbkAvf4
+curl.exe -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2ODU0OTI3MiwiZXhwIjoxNzY4NTUyODcyfQ.xJ9RwECVNEdMcO2P90R3h9tHYXsXmyVaSLacGbkAvf4" http://localhost:8080/test
